@@ -10,7 +10,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "doctrine/dbal": "2.*"
+        "doctrine/dbal": "3.*"
     },
     "require-dev": {
         "ext-simplexml": "*",
