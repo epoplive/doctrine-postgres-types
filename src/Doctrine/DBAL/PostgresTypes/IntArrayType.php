@@ -23,7 +23,7 @@ class IntArrayType extends Type
      */
     public function convertToPHPValue($value, AbstractPlatform $platform)
     {
-        $value = trim($value, '{}');
+        $value = trim((string)$value, '{}');
 
         if ($value === '') {
             return array();
