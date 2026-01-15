@@ -37,6 +37,9 @@ class IntArrayType extends Type
      */
     public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
+        if ($value === null) {
+          return null;
+        }
         return '{'.implode(',', $value).'}';
     }
 
